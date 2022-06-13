@@ -38,7 +38,7 @@ pipeline {
         }
         stage('Prepare DB') {            
             steps {
-                sshagent (credentials: ['app01']) {
+                sshagent (credentials: ['ssh-app01-1']) {
                     sh '''
                         pwd
                         echo $WORKSPACE
@@ -49,7 +49,7 @@ pipeline {
         }
         stage('deploym to vm 1') {
             steps{
-                sshagent (credentials: ['app01']) {
+                sshagent (credentials: ['ssh-app01-1']) {
                     sh '''
                         ansible-playbook -i ~/workspace/ansible-pipeline/hosts.yml -l webserver ~/workspace/ansible-pipeline/playbooks/django-project-install.yml
                     '''
