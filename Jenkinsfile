@@ -53,8 +53,6 @@ pipeline {
                     sh '''
                         ansible-playbook -i ~/workspace/ansible-pipeline/hosts.yml -l webserver ~/workspace/ansible-pipeline/playbooks/django-project-install.yml
                         source myvenv/bin/activate
-                        cd myproject
-                        gunicorn myproject.wsgi
                     '''
                 }
 
