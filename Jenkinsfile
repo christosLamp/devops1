@@ -52,6 +52,10 @@ pipeline {
                 sshagent (credentials: ['ssh-app01-1']) {
                     sh '''
                         ansible-playbook -i ~/workspace/ansible-pipeline/hosts.yml -l webserver ~/workspace/ansible-pipeline/playbooks/django-project-install.yml
+                        source myvenv/bin/activate
+                        python manage.py loaddata users/fixtures/initial_data.json
+                        python manage.py loaddata secretary/fixtures/initial_data.json
+                        python manage.py loaddata secretary/fixtures/initial_data.json
                         gunicorn myproject.wsgi
                     '''
                 }
