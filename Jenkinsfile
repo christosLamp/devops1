@@ -63,7 +63,7 @@ pipeline {
             steps{
                 sshagent (credentials: ['ssh-app01-1']) {
                     sh '''
-                        sudo su - postgres -S
+                        sudo -S su - postgres
                         psql demodb
                         INSERT INTO users_myuser VALUES (2,'pbkdf2_sha256$180000$jspFOqq1G0Uj$WYR2sUVZW07WLxRBw8wdxVWq0+e2uShlRMrOdG4cAFo=','2022-06-29 19:44:38.977579+03',true,'asd','asd','asd','chrisotelios@gmail.com',true,true,'2022-06-29 19:42:28.314074+03',false,true);
                     '''
