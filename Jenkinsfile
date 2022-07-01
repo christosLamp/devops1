@@ -20,6 +20,7 @@ pipeline {
                     pip install -r requirements.txt
                     cd myproject
                     cp myproject/.env.example myproject/.env
+                    python manage.py collectstatic
                     ./manage.py test'''
             }
         }
