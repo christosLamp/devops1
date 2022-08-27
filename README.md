@@ -1,3 +1,6 @@
+# Django Student Management System
+This is a Simple Student Management System where students can register and make their apply for a course at the same time and after that Secretary may aprove or disaprove their applies.
+
 ## Features of this Project
 
 ### A. Admin Users Can
