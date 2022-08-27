@@ -117,6 +117,4 @@ $  python manage.py loaddata initial_data.json
 
 3. Make sure ssh connection can be established between two servers
   1. Connect to Jenkins server
-  2. Run ```
-$  sudo su jenkins
-```
+  2. Run ```$  sudo su jenkins```
