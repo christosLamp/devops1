@@ -116,7 +116,11 @@ $  python manage.py loaddata initial_data.json
 
 3.Make sure ssh connection can be established between two servers  
   1. Connect to Jenkins server
-  2. Run: $ sudo su jenkins
+  2. Run: ```$ sudo su jenkins```
+  3. Create an id_rsa ssh Key
+  4. Copy the id_rsa.pub
+  5. Connect to Deployment server and paste it on the .ssh/authorized_keys file
+  6. Edit .ssh/config file and add this HostName and User changed to yours
 ```
 Host db01
     HostName 0.0.0.0
