@@ -1,46 +1,19 @@
 ## Features of this Project
 
 ### A. Admin Users Can
-1. See Overall Summary Charts of Stuudents Performance, Staffs Perfomrances, Courses, Subjects, Leave, etc.
-2. Manage Staffs (Add, Update and Delete)
-3. Manage Students (Add, Update and Delete)
-4. Manage Course (Add, Update and Delete)
-5. Manage Subjects (Add, Update and Delete)
-6. Manage Sessions (Add, Update and Delete)
-7. View Student Attendance
-8. Review and Reply Student/Staff Feedback
-9. Review (Approve/Reject) Student/Staff Leave
-
-### B. Staff/Teachers Can
-1. See the Overall Summary Charts related to their students, their subjects, leave status, etc.
-2. Take/Update Students Attendance
-3. Add/Update Result
-4. Apply for Leave
-5. Send Feedback to HOD
+1. Manage all Entities from the admin site
 
 ### C. Students Can
-1. See the Overall Summary Charts related to their attendance, their subjects, leave status, etc.
-2. View Attendance
-3. View Result
-4. Apply for Leave
-5. Send Feedback to HOD
+1.Register an account
+2.Apply for a Course
+
+### B. Secretary Can
+1.See Applies from all Students.
+2.Aprove Applies.
+3.NOT register (needs admin to create the account)
 
 
-## Support Developer
-1. Subscribe & Share my YouTube Channel - https://bit.ly/vijay-thapa-online-courses
-2. Add a Star 🌟  to this 👆 Repository
-
-
-## Donate
-
-**[PayPal](https://bit.ly/support-vijay-thapa)**
-
-**[Buy me a Coffee  ☕️](https://www.buymeacoffee.com/vijaythapa)**
-
-**Donate by wire transfer:** E-Mail at *donate@vijaythapa.com* for wire transfer details. 
-
-
-## How to Install and Run this project?
+## How to Install and Run this project Manualy?
 
 ### Pre-Requisites:
 1. Install Git Version Control
@@ -66,23 +39,12 @@ $  pip install virtualenv
 
 Create Virtual Environment
 
-For Windows
-```
-$  python -m venv venv
-```
-For Mac
 ```
 $  python3 -m venv venv
 ```
 
 Activate Virtual Environment
 
-For Windows
-```
-$  source venv/scripts/activate
-```
-
-For Mac
 ```
 $  source venv/bin/activate
 ```
@@ -109,7 +71,6 @@ $  pip install -r requirements.txt
 ```python
 ALLOWED_HOSTS = ['*']
 ```
-*No need to change on Mac.*
 
 
 **6. Now Run Server**
@@ -119,10 +80,6 @@ Command for PC:
 $ python manage.py runserver
 ```
 
-Command for Mac:
-```python
-$ python3 manage.py runserver
-```
 
 **7. Login Credentials**
 
@@ -131,6 +88,12 @@ Create Super User (HOD)
 $  python manage.py createsuperuser
 ```
 Then Add Email, Username and Password
+
+**8. Add initial data**
+Command for PC:
+```
+$  python manage.py loaddata initial_data.json
+```
 
 **or Use Default Credentials**
 
