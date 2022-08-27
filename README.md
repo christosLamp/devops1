@@ -4,8 +4,8 @@
 1. Manage all Entities from the admin site
 
 ### C. Students Can
-1.Register an account
-2.Apply for a Course
+1. Register an account.
+2. Apply for a Course
 
 ### B. Secretary Can
 1.See Applies from all Students.
