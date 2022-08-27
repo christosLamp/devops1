@@ -76,15 +76,17 @@ EMAIL_HOST_USER = email@email.com
 EMAIL_HOST_PASSWORD = password
 ```
 
-**5. Setup email service**
+**6. Setup email service**
 
 - Got to settings.py file 
-- Then, On allowed hosts, Add [‘*’]. 
+- Then, On the variables EMAIL_HOST_USER and EMAIL_HOST_PASSWORD add your email credentials
+
 ```python
-ALLOWED_HOSTS = ['*']
+EMAIL_HOST_USER = 'email@email.com'
+EMAIL_HOST_PASSWORD = password
 
 
-**6. Now Run Server**
+**7. Now Run Server**
 
 Command for PC:
 ```python
