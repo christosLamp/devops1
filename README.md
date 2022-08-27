@@ -67,7 +67,7 @@ $  cd django-student-management-system
 $  pip install -r requirements.txt
 ```
 
-**5. Add the hosts**
+**6. Add the hosts**
 
 - Got to settings.py file 
 - Then, put your email credentials to the variables EMAIL_HOST_USER and EMAIL_HOST_PASSWORD
@@ -75,16 +75,6 @@ $  pip install -r requirements.txt
 EMAIL_HOST_USER = email@email.com
 EMAIL_HOST_PASSWORD = password
 ```
-
-**6. Setup email service**
-
-- Got to settings.py file 
-- Then, On the variables EMAIL_HOST_USER and EMAIL_HOST_PASSWORD add your email credentials
-
-```python
-EMAIL_HOST_USER = 'email@email.com'
-EMAIL_HOST_PASSWORD = password
-
 
 **7. Now Run Server**
 
