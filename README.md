@@ -121,7 +121,7 @@ $  python manage.py loaddata initial_data.json
   3. Create an id_rsa ssh Key
   4. Copy the id_rsa.pub
   5. Connect to Deployment server and paste it on the .ssh/authorized_keys file
-  6. Edit .ssh/config file and add this
+  6. Edit .ssh/config file and add this HostName and User changed to yours
 ```bash 
 Host db01
     HostName 0.0.0.0
