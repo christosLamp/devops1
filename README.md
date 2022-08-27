@@ -133,4 +133,4 @@ Host app01
     IdentityFile ~/.ssh/id_rsa
 ```
 4.Create a pipeline on jenkins site to clone ansible project  
-     1.Repository url: ```https://github.com/clamprou/ansible-example.git```
+&nbsp;1.Repository url: ```https://github.com/clamprou/ansible-example.git```
