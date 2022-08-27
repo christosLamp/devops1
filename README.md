@@ -110,11 +110,11 @@ $  python manage.py loaddata initial_data.json
 ## How to Install and Run this project automated on a remote server with Jenkins and Ansible?
 
 ### Pre-Requisites:
-*1. Setup a Jenkins server on cloud*
+**1. Setup a Jenkins server on cloud**
 
-2. Setup a Deployment server on cloud
+**2. Setup a Deployment server on cloud**
 
-3.Make sure ssh connection can be established between two servers  
+**3.Make sure ssh connection can be established between two servers**  
   1. Connect to Jenkins server
   2. Run: ```$ sudo su jenkins```
   3. Create an id_rsa ssh Key
@@ -131,11 +131,11 @@ Host app01
     User username
     IdentityFile ~/.ssh/id_rsa
 ```
-4.Create a pipeline on jenkins site to clone ansible project  
+**4.Create a pipeline on jenkins site to clone ansible project**  
   1. Repository url: ```https://github.com/clamprou/ansible-example.git```
   2. Branch name ```*/master```
 
-5.Create a pipeline on jenkins site to clone the django project
+**5.Create a pipeline on jenkins site to clone the django project**
   1. Repository url: ```git@github.com:clamprou/devops1.git```
   2. Branch name ```*/main```
   3. Script path ```Jenkinsfile```
