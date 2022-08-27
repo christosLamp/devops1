@@ -97,17 +97,3 @@ Command for PC:
 ```
 $  python manage.py loaddata initial_data.json
 ```
-
-**or Use Default Credentials**
-
-*For HOD /SuperAdmin*
-Email: admin@gmail.com
-Password: admin
-
-*For Staff*
-Email: staff@gmail.com
-Password: staff
-
-*For Student*
-Email: student@gmail.com
-Password: student
