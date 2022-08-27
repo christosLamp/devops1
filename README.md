@@ -105,3 +105,14 @@ Command for PC:
 ```
 $  python manage.py loaddata initial_data.json
 ```
+
+
+## How to Install and Run this project automated on a remote server with Jenkins and Ansible?
+
+### Pre-Requisites:
+1. Setup a Jenkins server on cloud
+[ https://medium.com/bb-tutorials-and-thoughts/how-to-run-jenkins-on-gcp-vm-29dc18490fae ]
+
+2. Setup a Deployment server on cloud
+
+3.**1. Create a Folder where you want to save the project**
