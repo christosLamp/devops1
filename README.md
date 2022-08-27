@@ -115,4 +115,8 @@ $  python manage.py loaddata initial_data.json
 
 2. Setup a Deployment server on cloud
 
-3.**1. Create a Folder where you want to save the project**
+3. Make sure ssh connection can be established between two servers
+  1. Connect to Jenkins server
+  2. Run ```
+$  sudo su jenkins
+```
