@@ -111,7 +111,6 @@ $  python manage.py loaddata initial_data.json
 
 ### Pre-Requisites:
 1. Setup a Jenkins server on cloud
-[ https://medium.com/bb-tutorials-and-thoughts/how-to-run-jenkins-on-gcp-vm-29dc18490fae ]
 
 2. Setup a Deployment server on cloud
 
@@ -134,7 +133,9 @@ Host app01
 ```
 4.Create a pipeline on jenkins site to clone ansible project  
   1. Repository url: ```https://github.com/clamprou/ansible-example.git```
-  3. Branch name ```*/master```
-  4. Copy the id_rsa.pub
+  2. Branch name ```*/master```
 
-
+5.Create a pipeline on jenkins site to clone the django project
+  1. Repository url: ```git@github.com:clamprou/devops1.git```
+  2. Branch name ```*/main```
+  3. Script path ```Jenkinsfile```
