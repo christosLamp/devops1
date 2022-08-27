@@ -70,10 +70,18 @@ $  pip install -r requirements.txt
 **5. Add the hosts**
 
 - Got to settings.py file 
+- Then, put your email credentials to the variables EMAIL_HOST_USER and EMAIL_HOST_PASSWORD
+```python
+EMAIL_HOST_USER = email@email.com
+EMAIL_HOST_PASSWORD = password
+```
+
+**5. Setup email service**
+
+- Got to settings.py file 
 - Then, On allowed hosts, Add [‘*’]. 
 ```python
 ALLOWED_HOSTS = ['*']
-```
 
 
 **6. Now Run Server**
