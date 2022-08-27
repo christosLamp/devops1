@@ -110,7 +110,7 @@ $  python manage.py loaddata initial_data.json
 ## How to Install and Run this project automated on a remote server with Jenkins and Ansible?
 
 ### Pre-Requisites:
-1. Setup a Jenkins server on cloud
+*1. Setup a Jenkins server on cloud*
 
 2. Setup a Deployment server on cloud
 
