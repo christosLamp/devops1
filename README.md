@@ -67,6 +67,14 @@ $  cd django-student-management-system
 $  pip install -r requirements.txt
 ```
 
+**5. Add the hosts**
+
+- Got to settings.py file 
+- Then, On allowed hosts, Add [‘*’]. 
+```python
+ALLOWED_HOSTS = ['*']
+```
+
 **6. Add the hosts**
 
 - Got to settings.py file 
