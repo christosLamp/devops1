@@ -8,9 +8,9 @@
 2. Apply for a Course
 
 ### B. Secretary Can
-1.See Applies from all Students.
-2.Aprove Applies.
-3.NOT register (needs admin to create the account)
+1. See Applies from all Students.
+2. Approve Applies
+3. Not Register an account (needs admin to create one)
 
 
 ## How to Install and Run this project Manualy?
