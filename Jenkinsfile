@@ -58,16 +58,16 @@ pipeline {
             }
 
         }
-        // stage('loaddata') {
-        //     steps{
-        //         sshagent (credentials: ['ssh-app01-1']) {
-        //             sh '''
-        //                 ansible-playbook -i ~/workspace/ansible-pipeline/hosts.yml -l webserver ~/workspace/ansible-pipeline/playbooks/loaddata.yml
-        //             '''
-        //         }
+        stage('loaddata') {
+            steps{
+                sshagent (credentials: ['ssh-app01-1']) {
+                    sh '''
+                        ansible-playbook -i ~/workspace/ansible-pipeline/hosts.yml -l webserver ~/workspace/ansible-pipeline/playbooks/loaddata.yml
+                    '''
+                }
 
-        //     }
+            }
 
-        // }
+        }
     }
 }
